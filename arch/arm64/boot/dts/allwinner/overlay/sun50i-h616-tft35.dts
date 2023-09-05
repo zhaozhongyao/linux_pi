@@ -1,0 +1,32 @@
+/dts-v1/;
+/plugin/;
+#include <dt-bindings/gpio/gpio.h>
+/ {
+	compatible = "allwinner,sun50i-h616";
+
+
+	fragment@0 {
+		target = <&spi1>;
+		 __overlay__ {
+			#address-cells = <1>;
+   			#size-cells = <0>;
+			status = "okay";
+			display@0{
+				compatible = "sitronix,st7796";
+				reg = <0>;
+				spi-max-frequency = <80000000>;
+				dc-gpios = <&pio  2 14 GPIO_ACTIVE_HIGH>;
+				reset-gpios = <&pio 2 15 GPIO_ACTIVE_LOW>;
+				rotate = <0>;
+				status = "okay";
+				buswidth = <8>;
+				regwidth = <10>;
+				fps = <30>;
+				bgr = <0> ;
+				debug = <0x00>;
+			};
+		};
+	};
+
+
+};
