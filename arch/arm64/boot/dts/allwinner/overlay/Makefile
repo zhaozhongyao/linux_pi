@@ -8,11 +8,8 @@ dtbo-$(CONFIG_ARCH_SUNXI) += \
 	sun50i-h616-i2c1.dtbo \
 	sun50i-h616-i2c2.dtbo \
 	sun50i-h616-i2c4.dtbo \
-	sun50i-h616-pwm1.dtbo \
-	sun50i-h616-pwm2.dtbo \
-	sun50i-h616-pwm3.dtbo \
-	sun50i-h616-pwm4.dtbo \
 	sun50i-h616-spidev0_0.dtbo \
+	sun50i-h616-spi1.dtbo \
 	sun50i-h616-spidev1_0.dtbo \
 	sun50i-h616-spidev1_1.dtbo \
 	sun50i-h616-spidev1_2.dtbo \

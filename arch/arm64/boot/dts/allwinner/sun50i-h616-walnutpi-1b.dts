@@ -455,7 +455,7 @@
 &spi1 {
     #address-cells = <1>;
     #size-cells = <0>;
-    status = "okay";
+    // status = "okay";
 
 };
 
